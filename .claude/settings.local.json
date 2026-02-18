@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src --import-alias \"@/*\" --yes)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Read(//var/folders/yc/y2z1hm_n0vv2mjjcpgmvcgv40000gn/T/TemporaryItems/NSIRD_screencaptureui_1jdveu/**)",
+      "Bash(git remote add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
