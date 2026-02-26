@@ -32,6 +32,12 @@ export default function Navigation() {
               Knowledge Base
             </Link>
             <Link
+              href="/glossary"
+              className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 font-medium transition-colors"
+            >
+              Glossary
+            </Link>
+            <Link
               href="/speak"
               className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 font-medium transition-colors"
             >
@@ -107,6 +113,13 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Knowledge Base
+              </Link>
+              <Link
+                href="/glossary"
+                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Glossary
               </Link>
               <Link
                 href="/speak"

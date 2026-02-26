@@ -35,6 +35,7 @@ main::before {
   filter: blur(150px) opacity(0.25);
   transform: translate3d(0, 0, 0);
   content: "";
+  background-color: white;
 }
 
 @layer utilities {

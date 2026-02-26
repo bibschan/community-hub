@@ -1,0 +1,572 @@
+{
+  "terms": [
+    {
+      "id": "account-servicing-entity",
+      "term": "Account servicing entity (ASE)",
+      "definition": "An entity that provides and maintains payment accounts for payers and payees. ASEs that maintain financial accounts are regulated entities within the countries they operate. Examples include digital wallet providers, banks, crypto wallets, and mobile money providers.",
+      "analogy": "Think of an ASE like a post office that manages mailboxes. Just as a post office stores and manages your mail, an ASE stores and manages your money. Different post offices (banks, digital wallets, crypto wallets) all provide the same basic service but might offer different features.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["wallet-provider", "dfsp"]
+    },
+    {
+      "id": "asset",
+      "term": "Asset",
+      "definition": "An asset consists of two pieces of information, code and scale. The asset code SHOULD be an ISO 4217 currency code. The asset scale is the difference in orders of magnitude between the standard unit and a corresponding fractional unit.",
+      "analogy": "Think of an asset like a ruler with different units. The 'code' tells you what you're measuring (USD, EUR, BTC), while the 'scale' tells you the precision (dollars vs cents, or Bitcoin vs satoshis). Just like a ruler can measure in inches or centimeters with different levels of precision, an asset can represent different currencies with different decimal places.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical"],
+      "relatedTerms": []
+    },
+    {
+      "id": "auth",
+      "term": "Auth",
+      "definition": "Auth is sometimes used as informal shorthand for authorization, and it refers to giving consent or permission for a person, a system or a process to access, use or do something. In some contexts, the word 'auth' is used as shorthand for authentication.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical"],
+      "notes": "Usage: Don't use 'auth' without first using 'authorization'. Otherwise, some people may think it means authentication.",
+      "relatedTerms": ["authorization-server"]
+    },
+    {
+      "id": "authorization-server",
+      "term": "Authorization server",
+      "definition": "In the context of Open Payments, an authorization server grants permission for a client to access the Open Payments APIs and the incoming-payment, quote, and outgoing-payment resources. Open Payments leverages GNAP as the mechanism for delegating authorization.",
+      "analogy": "Think of an authorization server like a bouncer at a club. When an app wants to access your payment account, it has to ask the bouncer (authorization server) for permission. The bouncer checks your ID, asks if it's okay with you, and then gives the app a special wristband (access token) that shows what areas they're allowed to enter.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["gnap", "resource-server", "client"]
+    },
+    {
+      "id": "budget-reallocation-request",
+      "term": "Budget Reallocation Request (BRR)",
+      "definition": "A budget reallocation is a request to make changes to your project's original approved budget.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Grant Management"],
+      "relatedTerms": ["grant-timelines", "scope-change"]
+    },
+    {
+      "id": "call-for-proposals",
+      "term": "Call For Proposals (CFP) / Request for Proposals (RFP)",
+      "definition": "A business document that announces a project, describes it, and solicits bids from qualified community members to complete it.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Grant Management"],
+      "relatedTerms": []
+    },
+    {
+      "id": "clearing",
+      "term": "Clearing",
+      "definition": "All activities from the time a commitment is made for a transaction until it is settled. This process turns a promise of payment into the actual movement of money from one account to another (settlement). In the Interledger context, this involves the two peers exchanging data on what their current balance is and, if there is a discrepancy, resolving this.",
+      "analogy": "Imagine you and a friend keep lending each other small amounts of money throughout the week. Clearing is like sitting down at the end of the week to compare notes and figure out who owes what. You're reconciling all the IOUs before actually exchanging the final amount of cash (settlement).",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial", "ILF Specific"],
+      "relatedTerms": ["settlement", "peer"]
+    },
+    {
+      "id": "client",
+      "term": "Client",
+      "definition": "In the context of Open Payments, a client is a piece of software, such as a mobile or web application, that interacts with an authorization server to obtain grants and access tokens. Clients use tokens to access resource servers and perform actions, such as retrieving transaction history and setting up payments, on behalf of a user or system.",
+      "analogy": "Think of a client like your personal assistant. When you need something from your bank account, your assistant (the app) goes to the bank manager (authorization server) to get permission, receives a special badge (access token), and then uses that badge to access your account information or make payments on your behalf.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["authorization-server", "grant", "resource-server"]
+    },
+    {
+      "id": "closed-network",
+      "term": "Closed network",
+      "definition": "A network to which access is only allowed to users who have been authenticated.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Technical"],
+      "relatedTerms": []
+    },
+    {
+      "id": "continuous-payment",
+      "term": "Continuous payment",
+      "definition": "We're figuring this one out.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["In Development"],
+      "relatedTerms": ["streaming-payment"]
+    },
+    {
+      "id": "digital-financial-inclusion",
+      "term": "Digital Financial Inclusion",
+      "definition": "Digital financial inclusion can be defined as digital access to and use of formal financial services by excluded and underserved populations. Such services should be suited to the customers' needs and delivered responsibly, at a cost both affordable to customers and sustainable for providers.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["dfs", "dfsp"]
+    },
+    {
+      "id": "dfs",
+      "term": "Digital Financial Service (DFS)",
+      "definition": "Digital financial services include methods to electronically store and transfer funds; to make and receive payments; to borrow, save, insure and invest; and to manage a person's or enterprise's finances. Digital Financial Services (DFS) include a broad range of financial services accessed and delivered through digital channels, including payments, credit, savings, remittances and insurance.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["dfsp", "digital-financial-inclusion"]
+    },
+    {
+      "id": "dfsp",
+      "term": "Digital Financial Service Provider (DFSP)",
+      "definition": "Digital Financial Service Provider is an entity that provides a digital financial service to an end user (either a consumer, a business, or a government.)",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["dfs", "account-servicing-entity"]
+    },
+    {
+      "id": "digital-public-goods",
+      "term": "Digital Public Goods (DPG)",
+      "definition": "Open-source software, open data, open AI models, open standards, and open content that adhere to privacy and other applicable laws and best practices, do no harm by design, and help attain the SDGs.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Open Source"],
+      "relatedTerms": ["digital-public-infrastructure", "un-sdgs"]
+    },
+    {
+      "id": "digital-public-infrastructure",
+      "term": "Digital Public Infrastructure (DPI)",
+      "definition": "A set of shared digital systems which are secure and interoperable, built on open standards, and specifications to deliver and provide equitable access to public and/or private services at societal scale and are governed by enabling rules to drive development, inclusion, innovation, trust, and competition and respect human rights and fundamental freedoms.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Infrastructure"],
+      "relatedTerms": ["digital-public-goods", "interoperability"]
+    },
+    {
+      "id": "fiat-currency",
+      "term": "Fiat currency",
+      "definition": "A type of currency that is not backed by a precious metal, such as gold or silver. It is typically designated by the issuing government to be legal tender, and is authorized by government regulation.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": []
+    },
+    {
+      "id": "gnap",
+      "term": "Grant Negotiation Authorization Protocol (GNAP)",
+      "definition": "The Grant Negotiation Authorization Protocol (GNAP) defines a mechanism for delegating authorization to a piece of software, and conveying the results and artifacts of that delegation to the software. This delegation can include access to a set of APIs as well as subject information passed directly to the software.",
+      "analogy": "GNAP is like a formal procedure for asking someone's permission to borrow their car. Instead of just tossing the keys, there's a conversation: 'I need your car,' 'Why?', 'To go to the store,' 'Okay, here are the keys, but only for 2 hours and you can't leave the city.' GNAP is the standardized way apps and services have that conversation about accessing your accounts.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific", "Protocol"],
+      "relatedTerms": ["authorization-server", "grant", "open-payments"]
+    },
+    {
+      "id": "grant",
+      "term": "Grant",
+      "definition": "A delegation of authorization and privileges to a client allowing the client to access protected resources or to perform actions on behalf of a resource owner. In Open Payments, this process is managed by an authorization server, which issues grants as access tokens.",
+      "analogy": "Think of a grant like a temporary key card for a hotel. You give an app permission to do something specific with your account, and it receives a key card (access token) that only works for certain doors (resources) and only until checkout time (expiration). The hotel front desk (authorization server) controls who gets which key cards.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["gnap", "authorization-server", "client"]
+    },
+    {
+      "id": "grant-reports",
+      "term": "Grant Reports",
+      "definition": "These reports include a public narrative that looks at the project against the stated goals, deliverables, timeline and a private financial report of the actual costs spent within the proposed activity budget.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Grant Management"],
+      "relatedTerms": ["grant-timelines"]
+    },
+    {
+      "id": "grant-timelines",
+      "term": "Grant Timelines",
+      "definition": "This the length of time for projects. Grants projects can go from 3 months to 2 years.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Grant Management"],
+      "relatedTerms": ["grant-reports", "no-cost-extension"]
+    },
+    {
+      "id": "identity-provider",
+      "term": "Identity provider (IdP)",
+      "definition": "A system or service that stores and manages user authentication and consent information during an interactive grant process. Open Payments requires any authorization server that issues interactive grants to be integrated with an IdP.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["authorization-server", "grant"]
+    },
+    {
+      "id": "ilp-packet",
+      "term": "ILP packet",
+      "definition": "A unit of data that carries payment information through the Interledger network. A single payment can be broken into smaller packets of value which are then routed across the network.",
+      "analogy": "An ILP packet is like a single truck in a convoy delivering a large shipment. Instead of sending all your money in one giant transfer, it's broken into smaller packets (trucks) that can take different routes through the network. If one packet gets delayed or lost, the others can still get through, just like how a convoy can split up and take different highways.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific", "Technical"],
+      "relatedTerms": ["interledger-protocol", "stream"]
+    },
+    {
+      "id": "incoming-payment",
+      "term": "Incoming payment",
+      "definition": "An object created by the recipient's ASE, on their resource server, that represents a payment being received. The object represents the amount of received or expected funds, and it contains other information about the payment, such as the currency, receiver's wallet address, and payment status.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["outgoing-payment", "resource-server", "account-servicing-entity"]
+    },
+    {
+      "id": "instant-payment-system",
+      "term": "Instant Payment System (IPS)",
+      "definition": "An instant payment system (IPS) is a payment system that: Processes payments between accounts held at banks and/or regulated non-bank payment service providers; Processes payments instantly or within seconds (usually a maximum of 30 seconds, although some systems may take up to 90 seconds); Ultimately settles those payments in central bank money (either on a deferred net settlement basis, or through immediate settlement in central bank money of each individual transaction).",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["rtgs"]
+    },
+    {
+      "id": "interledger-protocol",
+      "term": "Interledger Protocol (ILP)",
+      "definition": "An open protocol tech stack for sending packets of value across different payment networks. Like the internet, connectors route packets of money across independent networks. The open architecture and minimal protocol enable interoperability for any value transfer system. Interledger is not tied to a single company, payment network, or currency. The Interledger network is made up of connectors or members that communicate with each other using ILP.",
+      "analogy": "ILP is like the postal system for money. Just as you can mail a letter from any country to any other country regardless of their local postal systems, ILP lets you send money between different payment networks (banks, mobile money, crypto) without them needing to directly connect. The 'connectors' are like postal sorting facilities that figure out the best route for your payment.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific", "Protocol"],
+      "relatedTerms": ["ilp-packet", "peer", "stream", "open-payments"]
+    },
+    {
+      "id": "intermediary",
+      "term": "Intermediary",
+      "definition": "An entity that makes arrangements between other entities when these other entities do not deal with each other directly.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": []
+    },
+    {
+      "id": "interoperability",
+      "term": "Interoperability",
+      "definition": "The ability of applications and systems to securely and automatically exchange data irrespective of geographical, political, or organizational boundaries.",
+      "analogy": "Interoperability is like having universal electrical outlets. Imagine if every appliance could plug into any outlet anywhere in the world without needing adapters. That's what interoperability does for digital systems - it lets different services and platforms work together seamlessly, regardless of who built them or where they're located.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical"],
+      "relatedTerms": ["open-protocol"]
+    },
+    {
+      "id": "kyc",
+      "term": "KYC",
+      "definition": "Know Your Customer/Know Your Client - Guidelines and regulations in financial services that require the verification of identity, suitability, and risks involved with maintaining a business relationship with a customer.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial", "Compliance"],
+      "relatedTerms": []
+    },
+    {
+      "id": "ledger",
+      "term": "Ledger",
+      "definition": "A ledger (also called a general ledger, accounting ledger, or financial ledger) is a record-keeping system for a company's financial transaction data.",
+      "analogy": "A ledger is like a detailed checkbook register or diary of all financial transactions. Just as you might write down every purchase and deposit in your checkbook to track your balance, a ledger records every financial transaction so you can see exactly where money came from and where it went.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": []
+    },
+    {
+      "id": "mobile-money",
+      "term": "Mobile money",
+      "definition": "Mobile Money is a mobile payments system based on accounts held by a mobile operator and accessible from subscribers' mobile phones. The conversion of cash into electronic value (and vice versa) happens at retail stores (or agents). All transactions are authorised and recorded in real-time using SMS.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": []
+    },
+    {
+      "id": "micro-payments",
+      "term": "Micro payments",
+      "definition": "A subjective/contextual term to describe very small payments; may be best understood as being a fraction of a whole e.g., a fraction of a cent.",
+      "analogy": "Micro payments are like paying with individual grains of rice instead of whole bags. They're tiny, tiny payments - imagine paying a fraction of a penny to read a single article, or a few cents per minute to listen to music. Traditional payment systems can't handle these because the processing fees would be larger than the payment itself!",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "notes": "Usage: We need to decide if its micropayment or micro payment.",
+      "relatedTerms": ["web-monetization"]
+    },
+    {
+      "id": "ngo",
+      "term": "NGO",
+      "definition": "Non-governmental Organization.",
+      "finalized": false,
+      "category": "General",
+      "tags": [],
+      "relatedTerms": []
+    },
+    {
+      "id": "no-cost-extension",
+      "term": "No-Cost Extension (NCE)",
+      "definition": "A no-cost extension gives Grantees additional time to finish their work, with no additional funding. If approved, will only be allowed up to 6 months beyond your original project end date.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Grant Management"],
+      "relatedTerms": ["grant-timelines"]
+    },
+    {
+      "id": "open-payments",
+      "term": "Open Payments (OP)",
+      "definition": "Open Payments is a specification and set of APIs that define standards for access to digital payment accounts. When an ASE implements Open Payments on its customers' accounts, third-party applications and other entities can initiate payments from their users' payment accounts (with permission). Open Payments-enabled accounts are assigned one or more wallet addresses.",
+      "analogy": "Open Payments is like having a standardized way to access any bank account. Imagine if instead of each bank having its own unique ATM system, there was one universal way to interact with all banks. That's Open Payments - it's a common language that apps can use to request payments from any compatible account, regardless of which bank or wallet service holds the money.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific", "API"],
+      "relatedTerms": ["wallet-address", "account-servicing-entity", "gnap", "interledger-protocol"]
+    },
+    {
+      "id": "open-protocol",
+      "term": "Open protocol",
+      "definition": "A nonproprietary protocol that's not owned by any particular company and not limited to a particular company's products.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical"],
+      "relatedTerms": ["open-source", "interoperability"]
+    },
+    {
+      "id": "open-source",
+      "term": "Open source",
+      "definition": "Nonproprietary source code that is made freely available for possible modification and redistribution.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical", "Open Source"],
+      "relatedTerms": ["oss", "open-protocol"]
+    },
+    {
+      "id": "oss",
+      "term": "OSS (Open Source Software)",
+      "definition": "Open-source software is computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code to anyone and for any purpose.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical", "Open Source"],
+      "relatedTerms": ["open-source", "digital-public-goods"]
+    },
+    {
+      "id": "outgoing-payment",
+      "term": "Outgoing payment",
+      "definition": "An object created by the sender's ASE, on their resource server, that represents a payment being sent. The sender must give explicit consent before the object can be created. This object contains information about the payment, such as the amount, currency, receiver's wallet address, and payment status.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["incoming-payment", "resource-server", "account-servicing-entity"]
+    },
+    {
+      "id": "payment-gateway",
+      "term": "Payment gateway",
+      "definition": "An intermediary that securely transmits sensitive payment data and facilitates transaction authorization; forwards transaction data to the payment processor; receives approval/decline response and communicates status to business's website or app; assists with fraud detection and prevention. Typically integrates with e-commerce platforms, websites, or mobile apps using APIs or prebuilt plugins.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["payment-processor"]
+    },
+    {
+      "id": "payment-method",
+      "term": "Payment method",
+      "definition": "The specific payment option/payment type/form of payment being used. Examples include Visa, Apple Pay, ACH, Konbini, PayNow, BTC, GBP. In Open Payments, Interledger is called a payment method.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["payment-network"]
+    },
+    {
+      "id": "payment-network",
+      "term": "Payment network",
+      "definition": "Any interconnected structure of financial entities and their respective authorized agents and affiliates within which funds can be transferred. Categories of payment networks include: P2P payment networks, ATM networks, card networks, EFT systems (ACH, Wire, CHIPS).",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["payment-method"]
+    },
+    {
+      "id": "payment-pointer",
+      "term": "Payment Pointer",
+      "definition": "A payment pointer is similar to a wallet address, and it is used to facilitate sending and receiving ILP packets. Where a wallet address begins with https:// a payment pointer begins with $. For example, $wallet.example.com/alice. Most payment pointers can be converted to wallet addresses by replacing the $ with https://.",
+      "analogy": "A payment pointer is like an email address for money. Just as you can send an email to someone@example.com, you can send money to $someone@wallet.com. It's a simple, human-readable way to identify where payments should go, instead of using long complicated account numbers.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific", "Technical"],
+      "relatedTerms": ["wallet-address", "ilp-packet"]
+    },
+    {
+      "id": "payment-processor",
+      "term": "Payment processor",
+      "definition": "Business that handles processing transactions, including authorization, facilitates funds transfer during settlement, verifies transaction details, checks customer account balance and validity of payment method, approves or denies transaction. Often has a direct contractual relationship with the business that includes providing it with a merchant account.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["payment-gateway", "settlement"]
+    },
+    {
+      "id": "peer",
+      "term": "Peer",
+      "definition": "Entities that are adjacent to each other on the Interledger network, operating as counterparties that send or receive Interledger packets to/from each other. Within the Interledger Protocol, connectors maintain peers, or counterparty connectors whom they transact with.",
+      "analogy": "Peers are like neighboring cities connected by a direct highway. In the Interledger network, peers are connectors that have a direct relationship and can pass payments to each other. Just as a highway connects two cities, a peer relationship connects two parts of the payment network, allowing value to flow between them.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific", "Technical"],
+      "relatedTerms": ["interledger-protocol", "clearing", "settlement"]
+    },
+    {
+      "id": "predatory-lenders",
+      "term": "Predatory lenders",
+      "definition": "Lenders that use aggressive sales tactics and exploit borrowers' lack of understanding of financial transaction through deceptive or fraudulent actions and a lack of transparency.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": []
+    },
+    {
+      "id": "proprietary-service",
+      "term": "Proprietary service",
+      "definition": "A service that belongs to/is controlled by a specific company or organization and cannot be freely accessed or used. The company/organization has complete authority over the service.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical"],
+      "relatedTerms": ["open-source"]
+    },
+    {
+      "id": "quote",
+      "term": "Quote",
+      "definition": "An object created by the ASE of a person sending a payment, on the resource server of the ASE. The object represents the total cost, including any applicable fees, for the sender to make a payment. When a quote is created, it serves as a commitment from the sender's ASE to deliver the amount to the recipient's ASE and is only valid for a limited time.",
+      "analogy": "A quote is like getting an estimate from a moving company. Before you send a payment, you ask 'How much will this cost including all fees?' and the system gives you a quote - a price that's guaranteed for a short time. This way you know exactly what you'll pay before committing to the transaction.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["outgoing-payment", "resource-server", "account-servicing-entity"]
+    },
+    {
+      "id": "resource-server",
+      "term": "Resource server",
+      "definition": "A server that hosts and manages access to protected Open Payments resources for incoming payments, quotes, and outgoing payments. This ensures that only authorized clients can perform actions through the Open Payments APIs.",
+      "analogy": "A resource server is like a secure vault where your payment information is stored. When an app wants to access your payment account, it needs to show its authorization badge to the vault keeper (resource server). The vault only opens if the badge is valid, ensuring only authorized apps can access your payment resources.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["authorization-server", "open-payments", "client"]
+    },
+    {
+      "id": "rtgs",
+      "term": "Real-Time Gross Settlement (RTGS)",
+      "definition": "Real-Time Gross Settlement (RTGS) is a system for electronic payments between banks, where the transactions process and settle in real time rather than being batched. By processing transactions without batching, transactions are able to process and settle, as the name suggests, in real-time.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial"],
+      "relatedTerms": ["instant-payment-system", "settlement"]
+    },
+    {
+      "id": "scope-change",
+      "term": "Scope Change (SC)",
+      "definition": "Grant project or timelines may change when moving from a proposal to an active project, grantees may wish to amend the scope, goals, or deliverables of your project.",
+      "finalized": false,
+      "category": "General",
+      "tags": ["Grant Management"],
+      "relatedTerms": ["grant-timelines"]
+    },
+    {
+      "id": "settlement",
+      "term": "Settlement",
+      "definition": "The discharge of the financial obligations that arise as a result of the clearing process between payers' and payees' financial institutions (eg the 'physical' exchange of money owed). In Interledger context, settlement refers to the settling of the Interledger account between two peers.",
+      "analogy": "Settlement is the actual exchange of money after you've figured out who owes what (clearing). Going back to the friend example: if after comparing notes you realize you owe your friend $20, settlement is when you actually hand them the $20 bill. It's the final step where the debt is paid and balances are zeroed out.",
+      "finalized": false,
+      "category": "Financial",
+      "tags": ["Financial", "ILF Specific"],
+      "relatedTerms": ["clearing", "peer", "payment-processor"]
+    },
+    {
+      "id": "spsp",
+      "term": "Simple Payments Setup Protocol (SPSP)",
+      "definition": "The Simple Payments Setup Protocol is a basic protocol for exchanging payment information between payee and payer to facilitate payment over Interledger.",
+      "finalized": false,
+      "category": "ILF",
+      "tags": ["ILF Specific", "Protocol"],
+      "relatedTerms": ["interledger-protocol", "stream"]
+    },
+    {
+      "id": "stream",
+      "term": "STREAM",
+      "definition": "STREAM is a multiplexed Interledger Transport Protocol that provides for sending multiple 'streams' of money and data between two parties using ILP.",
+      "analogy": "STREAM is like having multiple lanes on a highway. Instead of sending money and data in single file, STREAM lets you send multiple streams at once - kind of like how a highway lets many cars travel in parallel lanes. This makes payments faster and more efficient, and you can send money and related information (like invoices) together.",
+      "finalized": false,
+      "category": "ILF",
+      "tags": ["ILF Specific", "Protocol", "Technical"],
+      "relatedTerms": ["interledger-protocol", "ilp-packet"]
+    },
+    {
+      "id": "streaming-payment",
+      "term": "Streaming payment",
+      "definition": "We're figuring this one out.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["In Development"],
+      "relatedTerms": ["continuous-payment", "web-monetization"]
+    },
+    {
+      "id": "tigerbeetle",
+      "term": "TigerBeetle",
+      "definition": "TigerBeetle is a distributed financial accounting database designed for mission critical safety and performance.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical", "Database"],
+      "relatedTerms": []
+    },
+    {
+      "id": "un-sdgs",
+      "term": "UN SDG's",
+      "definition": "The United Nations Sustainable Development Goals are actionable items defined and adopted by the member states of the United Nations. As at 2023, there were 17 SDGs to drive and support peace and prosperity for people and the planet, in the present and the future.",
+      "finalized": false,
+      "category": "General",
+      "tags": [],
+      "relatedTerms": ["digital-public-goods"]
+    },
+    {
+      "id": "user-agent",
+      "term": "User agent",
+      "definition": "A user agent is a computer program representing or acting on behalf of a person. A web browser is a common example of a user agent.",
+      "finalized": false,
+      "category": "Technical",
+      "tags": ["Technical"],
+      "relatedTerms": []
+    },
+    {
+      "id": "wallet-address",
+      "term": "Wallet address",
+      "definition": "A secure, unique identifier for an Open Payments-enabled account. A wallet address is an entry point to the Open Payments APIs to facilitate sending and receiving payments. Similar to how an email address is a publicly shareable ID for an email account, a wallet address is a publicly shareable address for an underlying payment account.",
+      "analogy": "A wallet address is like your home address for digital payments. Just as people can send you mail if they know your home address (but can't break into your house with that information), people can send you payments if they know your wallet address, but they can't access or take money from your account. It's a safe, public identifier for your payment account.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["payment-pointer", "open-payments", "wallet-provider"]
+    },
+    {
+      "id": "wallet-provider",
+      "term": "Wallet provider",
+      "definition": "A digital wallet provider supplies you with the financial account you'll use to send or receive payments. Wallet providers are regulated within the countries they operate and are typically required by law to collect certain personal information to verify the identity of an account holder.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["wallet-address", "account-servicing-entity"]
+    },
+    {
+      "id": "web-monetization",
+      "term": "Web Monetization",
+      "definition": "Web Monetization is a technology that enables websites to receive payments from visitors as they interact with the content. Website owners, content owners, and publishers can use Web Monetization to complement or replace existing revenue models. Website visitors can make a one-time contribution or send continuous payments while they spend time on web monetized content. The amount and frequency of payments is chosen by the visitor, not the website.",
+      "analogy": "Web Monetization is like having a meter running while you read a magazine or watch TV. Instead of seeing ads or hitting a paywall, tiny automatic payments trickle from your digital wallet to the content creator as you consume their content - a few cents per article, a penny per minute of video. You control your monthly budget, and the money flows to creators based on what you actually engage with.",
+      "finalized": true,
+      "category": "ILF",
+      "tags": ["Common Term", "Finalized", "ILF Specific"],
+      "relatedTerms": ["wallet-address", "open-payments", "micro-payments"]
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-02-25",
+    "version": "1.0.0",
+    "totalTerms": 60
+  }
+}

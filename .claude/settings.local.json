@@ -6,7 +6,10 @@
       "Bash(npm install)",
       "Bash(npm run dev:*)",
       "Read(//var/folders/yc/y2z1hm_n0vv2mjjcpgmvcgv40000gn/T/TemporaryItems/NSIRD_screencaptureui_1jdveu/**)",
-      "Bash(git remote add:*)"
+      "Bash(git remote add:*)",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []
