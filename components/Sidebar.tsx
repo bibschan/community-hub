@@ -19,6 +19,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     { href: "/knowledge-base", label: "Knowledge Base", icon: "📚" },
     { href: "/glossary", label: "Glossary", icon: "📖" },
     { href: "/speak", label: "Speak", icon: "🎤" },
+    { href: "/meetup", label: "Host a Meetup", icon: "🍕" },
     { href: "/leaderboard", label: "Leaderboard", icon: "🏆" },
     { href: "/feedback", label: "Feedback", icon: "💬" },
   ];

@@ -44,6 +44,12 @@ export default function Navigation() {
               Speak
             </Link>
             <Link
+              href="/meetup"
+              className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 font-medium transition-colors"
+            >
+              Host a Meetup
+            </Link>
+            <Link
               href="/leaderboard"
               className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 font-medium transition-colors"
             >
@@ -127,6 +133,13 @@ export default function Navigation() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Speak
+              </Link>
+              <Link
+                href="/meetup"
+                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Host a Meetup
               </Link>
               <Link
                 href="/leaderboard"
