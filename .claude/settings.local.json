@@ -10,7 +10,8 @@
       "Bash(python3:*)",
       "Bash(pip3 install:*)",
       "Bash(mkdir:*)",
-      "Bash(npm run build)"
+      "Bash(npm run build)",
+      "WebFetch(domain:bibschan.github.io)"
     ],
     "deny": [],
     "ask": []
