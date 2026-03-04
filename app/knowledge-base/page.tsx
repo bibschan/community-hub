@@ -144,7 +144,6 @@ export default function KnowledgeBasePage() {
 
   const stats = {
     totalArticles: knowledgeBaseContent.length,
-    totalViews: knowledgeBaseContent.reduce((sum, item) => sum + item.views, 0),
     tutorials: knowledgeBaseContent.filter(item => item.category === "tutorial").length,
     demos: knowledgeBaseContent.filter(item => item.category === "demo").length,
     walkthroughs: knowledgeBaseContent.filter(item => item.category === "walkthrough").length
@@ -201,10 +200,6 @@ export default function KnowledgeBasePage() {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 text-center">
             <div className="text-2xl font-bold text-orange-600 mb-1">{stats.walkthroughs}</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Walkthroughs</div>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 text-center">
-            <div className="text-2xl font-bold text-pink-600 mb-1">{stats.totalViews.toLocaleString()}</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Total Views</div>
           </div>
         </div>
       </div>

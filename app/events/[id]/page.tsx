@@ -76,8 +76,15 @@ const eventsData: Record<string, {
   }
 };
 
-export default function EventDetailPage({ params }: { params: { id: string } }) {
-  const event = eventsData[params.id];
+export async function generateStaticParams() {
+  return Object.keys(eventsData).map((id) => ({
+    id,
+  }));
+}
+
+export default async function EventDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const event = eventsData[id];
 
   if (!event) {
     notFound();
